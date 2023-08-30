@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+}
+
+.main {
+  height: 100vh;
+  overflow-y: scroll;
+  width: 100%;
+  background-color: #f5f8ff;
+  padding: 1.5em;
+  /* background-color: #141c30; */
+}
+
+.dark-main {
+  background-color: #141c30;
+}
+
+.light-dark {
+  background-color: #1f2a48;
+  color: rgb(177, 169, 169);
+}
+
+.text-white {
+  color: rgb(177, 169, 169);
+}

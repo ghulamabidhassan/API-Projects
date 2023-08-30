@@ -1,0 +1,284 @@
+.container {
+  width: 100%;
+  /* background-color: black; */
+  color: black;
+  padding: 0em 0 1em 0;
+}
+
+.section-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em 0;
+}
+
+.light {
+  text-transform: uppercase;
+  font-size: 0.95em;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+}
+
+.section-one > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light {
+  text-transform: uppercase;
+  margin: 0 0.75em 0 0;
+}
+
+.sun,
+.moon {
+  cursor: pointer;
+}
+
+.section-two {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 0.5em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin: 1.5em 0;
+}
+
+.search {
+  margin: 0.5em;
+  font-size: 2em;
+  color: #0179fd;
+}
+
+input {
+  padding: auto 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+}
+
+.btn {
+  background-color: #0179fd;
+  padding: 0.65em 1em;
+  border-radius: 0.5em;
+  color: white;
+  letter-spacing: 0.5px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Space Mono", monospace;
+  font-size: 1em;
+  margin: 0 0.5em;
+  transition: 400ms ease-in-out;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.section-three {
+  background-color: white;
+  padding: 1em;
+  border-radius: 0.5em;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.img {
+  height: 6em;
+  border-radius: 50%;
+}
+
+.article-one {
+  display: flex;
+  /* justify-content: ; */
+  /* font-size: 1em; */
+}
+
+.right {
+  margin-left: 1em;
+}
+
+.username {
+  font-size: 1.2em;
+  font-weight: bold;
+  /* margin-bottom: -0.5em; */
+  letter-spacing: 1px;
+  /* background-color: black; */
+}
+
+.user-id {
+  font-size: 1em;
+  /* letter-spacing: ; */
+  margin: 0.5em 0;
+  color: #0179fd;
+}
+
+.joined {
+  color: rgb(150, 139, 139);
+  font-size: 0.95em;
+}
+
+.article-two {
+  margin: 1em 0;
+}
+
+.bio {
+  margin: 1.5em 0;
+  line-height: 1.75em;
+  /* color: #f5f8ff; */
+  color: rgb(124, 121, 121);
+}
+
+.follows {
+  margin: 0.5em;
+  background-color: #f5f8ff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0.5em;
+  border-radius: 0.5em;
+}
+
+.follows > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  margin-bottom: 0.5em;
+  text-transform: capitalize;
+}
+
+.count {
+  color: black;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.social {
+  display: flex;
+  justify-content: start;
+  /* background-color: blue; */
+  align-items: center;
+  margin: 0.5em 0;
+}
+
+.social-icon {
+  font-size: 1.35em;
+  color: #0179fd;
+}
+
+.url {
+  padding: 0.3em 0;
+  margin-left: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  color: rgb(105, 106, 109);
+  line-break: anywhere;
+}
+
+.sidebar {
+  display: none;
+}
+
+.light-dark {
+  background-color: #1f2a48;
+  color: rgb(177, 169, 169);
+}
+
+.text-white {
+  color: rgb(206, 196, 196);
+}
+
+.count-white {
+  color: white;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0.3em 0;
+}
+
+@media screen and (min-width: 720px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 50%;
+    padding: 4em 0 3em 0;
+  }
+
+  .section-three {
+    padding: 2em;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .follows {
+    padding: 0.6em 0;
+  }
+
+  .user {
+    display: grid;
+    grid-template-columns: 0.8fr 2fr;
+  }
+
+  .img-desktop {
+    height: 8em;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .sidebar {
+    display: block;
+  }
+
+  .right {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .socials-cont {
+    font-size: 0.8em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .socials {
+    margin: 0 0.75em;
+  }
+
+  .follows {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .main {
+    height: 100vh;
+  }
+
+  .container {
+    padding: 0em;
+    width: 40%;
+  }
+}
