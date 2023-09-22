@@ -6,7 +6,7 @@ const showAll = async () => {
 };
 
 const showUnique = async (id) => {
-  let data = raw;
+  let data = await raw;
   let filter = await data.filter((item) => {
     return item.id == id;
   });
