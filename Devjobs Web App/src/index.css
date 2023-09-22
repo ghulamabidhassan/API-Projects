@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600&family=Montserrat:wght@100;200;300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1em;
+  background-color: #f2f2f2;
+}
+
+.dark-body {
+  background-color: #121721;
+  transition: 400ms ease-in-out;
+}
+
+.dark-job {
+  background-color: #19202d;
+  transition: 400ms ease-in-out;
+}
+
+.light-title {
+  color: white;
+  transition: 400ms ease-in-out;
+}
+
+.dark-search {
+  background-color: #121721;
+  color: white;
+}
+
+.dark-input {
+  background-color: #121721;
+  color: #6e8098;
+  /* transition: 400ms ease-in-out; */
+}
+
+.loading-white {
+  color: white;
+}
+
+.dark-sections {
+  background-color: #19202d;
+  transition: 400ms ease-in-out;
+  box-shadow: none;
+}
+
+.dark-btn {
+  background-color: #696e76;
+  color: white;
+  transition: 400ms ease-in-out;
+}
