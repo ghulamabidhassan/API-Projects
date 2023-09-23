@@ -8,7 +8,7 @@ const router = express.Router();
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://devjobs-web-app-abid.netlify.app",
   })
 );
 

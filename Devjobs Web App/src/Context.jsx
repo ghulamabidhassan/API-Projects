@@ -34,8 +34,6 @@ const AppProvider = ({ children }) => {
     setTemp(filterData);
   };
 
-  console.log(job);
-
   const searchBtn = () => {
     let filterData = data.filter((item) => {
       return (
