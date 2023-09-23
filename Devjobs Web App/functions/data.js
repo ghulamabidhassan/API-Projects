@@ -2,7 +2,7 @@ const data = [
   {
     id: 1,
     company: "Scoot",
-    logo: "../public/assets/logos/scoot.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482596/devjobs%20web%20app/scoot_z48tvi.svg",
     logoBackground: "hsl(36, 87%, 49%)",
     position: "Senior Software Engineer",
     postedAt: "5h ago",
@@ -37,7 +37,7 @@ const data = [
   {
     id: 2,
     company: "Blogr",
-    logo: "../public/assets/logos/blogr.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482594/devjobs%20web%20app/blogr_saozeu.svg",
     logoBackground: "hsl(12, 79%, 52%)",
     position: "Haskell and PureScript Dev",
     postedAt: "20h ago",
@@ -72,7 +72,7 @@ const data = [
   {
     id: 3,
     company: "Vector",
-    logo: "../public/assets/logos/vector.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482596/devjobs%20web%20app/vector_lqlzhn.svg",
     logoBackground: "hsl(235, 10%, 23%)",
     position: "Midlevel Back End Engineer",
     postedAt: "1d ago",
@@ -106,7 +106,7 @@ const data = [
   {
     id: 4,
     company: "Office Lite",
-    logo: "../public/assets/logos/officelite.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482594/devjobs%20web%20app/officelite_gavub2.svg",
     logoBackground: "hsl(227, 62%, 48%)",
     position: "Senior Application Engineer",
     postedAt: "2d ago",
@@ -142,7 +142,7 @@ const data = [
   {
     id: 5,
     company: "Pod",
-    logo: "../public/assets/logos/pod.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482594/devjobs%20web%20app/pod_txvjaa.svg",
     logoBackground: "hsl(216, 46%, 14%)",
     position: "Remote DevOps Engineer",
     postedAt: "2d ago",
@@ -182,7 +182,7 @@ const data = [
   {
     id: 6,
     company: "Creative",
-    logo: "../public/assets/logos/creative.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482595/devjobs%20web%20app/creative_chvrou.svg",
     logoBackground: "hsl(295, 55%, 21%)",
     position: "Desktop Support Manager",
     postedAt: "4d ago",
@@ -220,7 +220,7 @@ const data = [
   {
     id: 7,
     company: "Pomodoro",
-    logo: "../public/assets/logos/pomodoro.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482596/devjobs%20web%20app/pomodoro_kto8aw.svg",
     logoBackground: "hsl(254, 71%, 45%)",
     position: "iOS Engineer",
     postedAt: "1w ago",
@@ -255,7 +255,7 @@ const data = [
   {
     id: 8,
     company: "Maker",
-    logo: "../public/assets/logos/maker.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482596/devjobs%20web%20app/maker_xlhuti.svg",
     logoBackground: "hsl(218, 58%, 31%)",
     position: "Senior EJB Developer",
     postedAt: "1w ago",
@@ -290,7 +290,7 @@ const data = [
   {
     id: 9,
     company: "Coffeeroasters",
-    logo: "../public/assets/logos/coffeeroasters.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482594/devjobs%20web%20app/coffeeroasters_rxxoj8.svg",
     logoBackground: "hsl(29, 60%, 87%)",
     position: "Senior Frontend Developer",
     postedAt: "1w ago",
@@ -325,7 +325,7 @@ const data = [
   {
     id: 10,
     company: "Mastercraft",
-    logo: "../public/assets/logos/mastercraft.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482596/devjobs%20web%20app/mastercraft_uug29e.svg",
     logoBackground: "hsl(0, 0%, 12%)",
     position: "App & Website Designer",
     postedAt: "2w ago",
@@ -362,7 +362,7 @@ const data = [
   {
     id: 11,
     company: "Crowdfund",
-    logo: "../public/assets/logos/crowdfund.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482594/devjobs%20web%20app/crowdfund_ilqulx.svg",
     logoBackground: "hsl(157, 57%, 50%)",
     position: "Fullstack Developer",
     postedAt: "1mo ago",
@@ -399,7 +399,7 @@ const data = [
   {
     id: 12,
     company: "Typemaster",
-    logo: "../public/assets/logos/typemaster.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482596/devjobs%20web%20app/typemaster_q1gyj7.svg",
     logoBackground: "hsl(22, 89%, 52%)",
     position: "Technical Lead Engineer",
     postedAt: "1mo ago",
@@ -435,7 +435,7 @@ const data = [
   {
     id: 13,
     company: "Crowdfund",
-    logo: "../public/assets/logos/crowdfund.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482594/devjobs%20web%20app/crowdfund_ilqulx.svg",
     logoBackground: "hsl(157, 57%, 50%)",
     position: "Front-end Developer",
     postedAt: "1mo ago",
@@ -471,7 +471,7 @@ const data = [
   {
     id: 14,
     company: "Coffeeroasters",
-    logo: "../public/assets/logos/coffeeroasters.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482594/devjobs%20web%20app/coffeeroasters_rxxoj8.svg",
     logoBackground: "hsl(29, 60%, 87%)",
     position: "Junior Full-Stack Developer",
     postedAt: "1mo ago",
@@ -507,7 +507,7 @@ const data = [
   {
     id: 15,
     company: "Blogr",
-    logo: "../public/assets/logos/blogr.svg",
+    logo: "https://res.cloudinary.com/dzci9azc2/image/upload/v1695482594/devjobs%20web%20app/blogr_saozeu.svg",
     logoBackground: "hsl(12, 79%, 52%)",
     position: "Midweight Front-end Developer",
     postedAt: "1mo ago",

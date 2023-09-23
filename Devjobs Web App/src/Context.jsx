@@ -12,11 +12,6 @@ const AppProvider = ({ children }) => {
   const [list, setList] = useState(6);
   const [hide, setHide] = useState(false);
   const [arr, setArr] = useState([]);
-  // const [fields, setFields] = useState({
-  //   title: "",
-  //   location: "",
-  //   type: "",
-  // });
   const [search, setSearch] = useState();
 
   const darkMode = () => {
@@ -40,10 +35,6 @@ const AppProvider = ({ children }) => {
   };
 
   const searchBtn = () => {
-    if (!search) {
-      return setTemp(data);
-    }
-
     let filterData = data.filter((item) => {
       return (
         item.position.toLowerCase().includes(search) ||
@@ -52,6 +43,7 @@ const AppProvider = ({ children }) => {
         item.location.toLowerCase().includes(search)
       );
     });
+    console.log(filterData);
     setList(filterData.length);
     setTemp(filterData);
   };
@@ -59,23 +51,23 @@ const AppProvider = ({ children }) => {
   const ShowAll = async () => {
     setLoading(true);
     let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server`;
-    const {
-      data: { data },
-    } = await axios.get(url);
-    setData(data);
-    setTemp(data);
+    const { data } = await axios.get(url);
+    setData(data.data.default);
+    setTemp(data.data.default);
     setLoading(false);
   };
 
   const showUnique = async (id) => {
     setLoading(true);
-    let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server/job/${id}`;
+    let url = `http://localhost:8888/.netlify/functions/server/job/${id}`;
     const {
       data: { data },
     } = await axios.get(url);
     setJob(data[0]);
     setLoading(false);
   };
+
+  console.log(job);
 
   const loadMore = () => {
     setList((prev) => {
@@ -87,12 +79,13 @@ const AppProvider = ({ children }) => {
     if (list < 6) {
       setHide(true);
     }
-    if (list >= 6 && list <= 12) {
+    if (list > 6) {
       setHide(false);
-    } else {
+    }
+    if (list >= 14) {
       setHide(true);
     }
-  }, [list]);
+  });
 
   useEffect(() => {
     ShowAll();
