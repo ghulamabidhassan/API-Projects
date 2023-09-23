@@ -5,11 +5,14 @@ const showAll = async () => {
   return data;
 };
 
+console.log(raw);
+
 const showUnique = async (id) => {
-  let data = raw;
-  let filter = data.filter((item) => {
+  let data = await raw;
+  let filter = await data.find((item) => {
     return item.id == id;
   });
+
   return filter;
 };
 export { showAll, showUnique };
