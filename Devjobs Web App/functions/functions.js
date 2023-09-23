@@ -8,11 +8,11 @@ const showAll = async () => {
 console.log(raw);
 
 const showUnique = async (id) => {
-  let data = await raw;
-  let filter = await data.find((item) => {
+  let data = raw;
+  let filter = data.filter((item) => {
     return item.id == id;
   });
-
+  console.log(filter);
   return filter;
 };
 export { showAll, showUnique };
