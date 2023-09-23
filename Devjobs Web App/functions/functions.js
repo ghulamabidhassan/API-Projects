@@ -9,7 +9,7 @@ console.log(raw);
 
 const showUnique = (id) => {
   let data = raw;
-  let filter = data.filter((item) => {
+  let filter = data.find((item) => {
     return item.id == id;
   });
   return filter;

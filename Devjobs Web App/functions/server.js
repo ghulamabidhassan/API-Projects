@@ -21,7 +21,7 @@ router.get("/", async (req, res) => {
   res.json({ data });
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", (req, res) => {
   const { id } = req.params;
   const data = showUnique(id);
   res.json({ data });
