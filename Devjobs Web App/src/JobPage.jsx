@@ -5,7 +5,6 @@ import { useEffect } from "react";
 const Job = () => {
   const { id } = useParams();
   const { loading, showUnique, job, dark } = useGlobalContext();
-  console.log(job);
 
   useEffect(() => {
     showUnique(id);

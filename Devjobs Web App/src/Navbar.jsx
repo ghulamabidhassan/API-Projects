@@ -9,7 +9,11 @@ const Navbar = () => {
       <nav className="navbar ">
         <div className="left">
           <Link className="link" to="/">
-            <img src="../public/logo.svg" alt="" className="logo" />
+            <img
+              src="https://res.cloudinary.com/dzci9azc2/image/upload/v1695483345/devjobs%20web%20app/logo_l2v6kq.svg"
+              alt=""
+              className="logo"
+            />
           </Link>
         </div>
         <div className="right">

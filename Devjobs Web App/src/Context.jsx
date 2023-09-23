@@ -59,7 +59,7 @@ const AppProvider = ({ children }) => {
 
   const showUnique = async (id) => {
     setLoading(true);
-    let url = `http://localhost:8888/.netlify/functions/server/job/${id}`;
+    let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server/${id}`;
     const {
       data: { data },
     } = await axios.get(url);
