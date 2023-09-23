@@ -12,7 +12,6 @@ const showUnique = async (id) => {
   let filter = data.filter((item) => {
     return item.id == id;
   });
-  console.log(filter);
   return filter;
 };
 export { showAll, showUnique };

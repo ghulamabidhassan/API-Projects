@@ -8,7 +8,7 @@ const router = express.Router();
 
 app.use(
   cors({
-    origin: "https://devjobs-web-app-abid.netlify.app",
+    origin: "*",
   })
 );
 
@@ -19,7 +19,7 @@ router.get("/", async (req, res) => {
   res.json({ data });
 });
 
-router.get("/job/:id", async (req, res) => {
+router.get("/:id", async (req, res) => {
   const { id } = req.params;
   const data = await showUnique(id);
   res.json({ data });

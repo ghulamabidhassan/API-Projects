@@ -34,6 +34,8 @@ const AppProvider = ({ children }) => {
     setTemp(filterData);
   };
 
+  console.log(job);
+
   const searchBtn = () => {
     let filterData = data.filter((item) => {
       return (
@@ -58,7 +60,7 @@ const AppProvider = ({ children }) => {
 
   const showUnique = async (id) => {
     setLoading(true);
-    let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server/job/${id}`;
+    let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server/${id}`;
     const {
       data: { data },
     } = await axios.get(url);
