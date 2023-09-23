@@ -23,7 +23,7 @@ router.get("/", async (req, res) => {
 
 router.get("/:id", async (req, res) => {
   const { id } = req.params;
-  const data = await showUnique(id);
+  const data = showUnique(id);
   res.json({ data });
 });
 
