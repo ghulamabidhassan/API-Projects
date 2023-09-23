@@ -7,7 +7,7 @@ const showAll = async () => {
 
 console.log(raw);
 
-const showUnique = async (id) => {
+const showUnique = (id) => {
   let data = raw;
   let filter = data.filter((item) => {
     return item.id == id;
