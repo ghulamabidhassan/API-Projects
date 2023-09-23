@@ -43,7 +43,6 @@ const AppProvider = ({ children }) => {
         item.location.toLowerCase().includes(search)
       );
     });
-    console.log(filterData);
     setList(filterData.length);
     setTemp(filterData);
   };
@@ -59,15 +58,13 @@ const AppProvider = ({ children }) => {
 
   const showUnique = async (id) => {
     setLoading(true);
-    let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server/${id}`;
+    let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server/job/${id}`;
     const {
       data: { data },
     } = await axios.get(url);
     setJob(data[0]);
     setLoading(false);
   };
-
-  console.log(job);
 
   const loadMore = () => {
     setList((prev) => {
