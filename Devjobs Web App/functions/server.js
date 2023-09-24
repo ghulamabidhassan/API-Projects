@@ -21,9 +21,9 @@ router.get("/", async (req, res) => {
   res.json({ data });
 });
 
-router.get("/:id", (req, res) => {
+router.get("/:id", async (req, res) => {
   const { id } = req.params;
-  const data = showUnique(id);
+  const data = await showUnique(id);
   res.json({ data });
 });
 
