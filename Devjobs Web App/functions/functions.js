@@ -7,7 +7,7 @@ const showAll = async () => {
 
 const showSingle = async (id) => {
   let data = raw;
-  let filter = data.filter((item) => {
+  let filter = data.map((item) => {
     return item.id == id;
   });
   return filter;
