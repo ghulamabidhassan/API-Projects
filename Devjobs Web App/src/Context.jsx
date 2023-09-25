@@ -49,16 +49,18 @@ const AppProvider = ({ children }) => {
 
   const ShowAll = async () => {
     setLoading(true);
-    let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server`;
-    const { data } = await axios.get(url);
-    setData(data.data);
-    setTemp(data.data);
+    let url = `http://localhost:8888/.netlify/functions/server`;
+    const {
+      data: { data },
+    } = await axios.get(url);
+    setData(data);
+    setTemp(data);
     setLoading(false);
   };
 
   const showUnique = async (id) => {
     setLoading(true);
-    let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server`;
+    let url = `http://localhost:8888/.netlify/functions/server`;
     const {
       data: { data },
     } = await axios.get(url);

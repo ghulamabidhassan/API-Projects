@@ -18,7 +18,7 @@ const Jobs = () => {
 
   return (
     <div className="jobs">
-      {temp &&
+      {temp?.length > 0 &&
         temp.slice(0, list).map((item, index) => {
           const {
             id,
