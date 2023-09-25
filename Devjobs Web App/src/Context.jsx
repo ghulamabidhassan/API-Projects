@@ -49,7 +49,7 @@ const AppProvider = ({ children }) => {
 
   const ShowAll = async () => {
     setLoading(true);
-    let url = `http://localhost:8888/.netlify/functions/server`;
+    let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server`;
     const {
       data: { data },
     } = await axios.get(url);
@@ -60,7 +60,7 @@ const AppProvider = ({ children }) => {
 
   const showUnique = async (id) => {
     setLoading(true);
-    let url = `http://localhost:8888/.netlify/functions/server`;
+    let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server/`;
     const {
       data: { data },
     } = await axios.get(url);
