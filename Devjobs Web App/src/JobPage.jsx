@@ -15,8 +15,6 @@ const Job = () => {
     });
   }, []);
 
-  console.log(job);
-
   if (loading) {
     return (
       <div className="loading-cont">
