@@ -51,8 +51,8 @@ const AppProvider = ({ children }) => {
     setLoading(true);
     let url = `https://devjobs-web-app-abid.netlify.app/.netlify/functions/server`;
     const { data } = await axios.get(url);
-    setData(data.data.default);
-    setTemp(data.data.default);
+    setData(data.data);
+    setTemp(data.data);
     setLoading(false);
   };
 
@@ -62,7 +62,7 @@ const AppProvider = ({ children }) => {
     const {
       data: { data },
     } = await axios.get(url);
-    let filter = data.filter((item) => {
+    let filter = await data.filter((item) => {
       return item.id == id;
     });
     setJob(filter[0]);
