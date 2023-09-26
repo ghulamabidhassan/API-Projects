@@ -1,4 +1,4 @@
-const data = [
+const raw = [
   {
     id: 1,
     company: "Scoot",
@@ -541,4 +541,4 @@ const data = [
   },
 ];
 
-export default data;
+export { raw };

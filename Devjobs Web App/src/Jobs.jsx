@@ -16,6 +16,8 @@ const Jobs = () => {
     );
   }
 
+  console.log(data);
+
   return (
     <div className="jobs">
       {temp?.length > 0 &&

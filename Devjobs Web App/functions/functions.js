@@ -1,20 +1,15 @@
-import raw from "./data";
+import { raw } from "./data";
 
 const showAll = async () => {
   let data = raw;
   return data;
 };
 
-const showSingle = async (id) => {
+const showUnique = async (id) => {
   let data = raw;
   let filter = data.filter((item) => {
     return item.id == id;
   });
   return filter;
-};
-
-const showUnique = async (id) => {
-  let data = await showSingle(id);
-  return data;
 };
 export { showAll, showUnique };
