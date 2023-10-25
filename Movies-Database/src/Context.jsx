@@ -8,8 +8,7 @@ const AppProvider = ({ children }) => {
   const [moviePage, setMoviePage] = useState();
   const [search, setSearch] = useState("avengers");
   const [loading, setLoading] = useState(true);
-
-  console.log(loading);
+  const [response, setResponse] = useState(true);
 
   const showAll = async () => {
     setLoading(true);
@@ -36,6 +35,7 @@ const AppProvider = ({ children }) => {
     );
     setTemp(result.data);
     setLoading(false);
+    setResponse(result.data.Response);
   };
 
   const inputSearch = (e) => {
@@ -50,6 +50,10 @@ const AppProvider = ({ children }) => {
     if (!search) {
       showAll();
     }
+    if (search == "") {
+      showAll();
+      setResponse("True");
+    }
   }, [search]);
 
   return (
@@ -63,6 +67,7 @@ const AppProvider = ({ children }) => {
         showSearch,
         moviePage,
         loading,
+        response,
       }}
     >
       {children}

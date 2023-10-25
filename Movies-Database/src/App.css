@@ -130,6 +130,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   /* background-color: blue; */
+  align-items: center;
   margin: 2em 0 0 0;
 }
 
@@ -175,5 +176,22 @@ input:focus {
 
   .right {
     margin-left: 4em;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .movie-section {
+    width: 60%;
+    /* background-color: blue; */
+  }
+}
+
+@media screen and (min-width: 120em) {
+  .main {
+    font-size: 1.25em;
+  }
+
+  .movie-page {
+    font-size: 1.25em;
   }
 }

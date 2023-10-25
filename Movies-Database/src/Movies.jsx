@@ -3,10 +3,14 @@ import { useGlobalContext } from "./Context";
 import { Link } from "react-router-dom";
 
 const Movies = () => {
-  const { temp, loading } = useGlobalContext();
+  const { temp, loading, response } = useGlobalContext();
 
   if (loading) {
     return <h2 className="loading">Loading...</h2>;
+  }
+
+  if (response === "False") {
+    return <h2 className="loading movie-page">Type something valid...</h2>;
   }
 
   return (
