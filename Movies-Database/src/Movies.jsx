@@ -1,6 +1,7 @@
 import { FaRegClock } from "react-icons/fa";
 import { useGlobalContext } from "./Context";
 import { Link } from "react-router-dom";
+import alternate from "../public/notavailable.png";
 
 const Movies = () => {
   const { temp, loading, response } = useGlobalContext();
@@ -19,7 +20,14 @@ const Movies = () => {
         return (
           <Link className="link" key={idx} to={`movie/${item?.imdbID}`}>
             <article className="movie">
-              <img src={item?.Poster} alt="" className="image" />
+              <img
+                src={item?.Poster}
+                onError={(e) => {
+                  e.target.src = alternate;
+                }}
+                alt=""
+                className="image"
+              />
               <h2 className="title">{item.Title}</h2>
               <div className="flex">
                 <FaRegClock className="clock" />

@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useGlobalContext } from "./Context";
 import { useEffect } from "react";
+import alternate from "../public/notavailable.png";
 
 const MoviePage = () => {
   const { moviePage, showUnique, loading } = useGlobalContext();
@@ -23,7 +24,14 @@ const MoviePage = () => {
       </article>
       <section className="movie-section">
         <div className="left">
-          <img src={moviePage?.Poster} alt="" className="movie-poster" />
+          <img
+            src={moviePage.Poster}
+            onError={(e) => {
+              e.target.src = alternate;
+            }}
+            alt=""
+            className="movie-poster"
+          />
         </div>
         <div className="right">
           <ul className="list">
