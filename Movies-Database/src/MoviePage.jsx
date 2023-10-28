@@ -25,7 +25,7 @@ const MoviePage = () => {
       <section className="movie-section">
         <div className="left">
           <img
-            src={moviePage.Poster}
+            src={moviePage?.Poster}
             onError={(e) => {
               e.target.src = alternate;
             }}
