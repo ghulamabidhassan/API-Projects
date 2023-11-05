@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: "https://devjobs-web-app-abid.netlify.app",
+    origin: "https://jobs.abidhassan.dev/",
   })
 );
 
