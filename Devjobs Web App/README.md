@@ -1,8 +1,26 @@
-# React + Vite
+# DevJobs Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the DevJobs Web App! This project is designed to showcase a web application that helps users find developer jobs. The application utilizes [ReactJS](https://react.dev/) for the Frontend, [Express js](https://expressjs.com/) for the backend hosted on [Netlify](https://www.netlify.com/) with serverless functions to provide the API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Job Listings:** View a list of available developer jobs.
+- **Search:** Search for jobs based on keywords, location, etc.
+
+### Prerequisites
+
+- Node.js installed on your machine.
+- Netlify.
+
+## Getting Started
+
+To get started with the DevJobs Web App, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/ghulamabidhassan/API-Projects.git
+
+2. cd Devjobs Web App && npm install && npm run dev
+3. cd functions && netlify dev
+
+[Live Demo URL](https://jobs.abidhassan.dev/)
