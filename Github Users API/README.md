@@ -2,6 +2,9 @@
 
 This project is a simple React application that fetches and displays user information from the Github Users API.
 
+[Live Demo Url](https://githubusers.abidhassan.dev/)
+
+
 ## Getting Started
 
 Follow these instructions to get a copy of the project up and running on your local machine.
@@ -19,6 +22,4 @@ Follow these instructions to get a copy of the project up and running on your lo
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/ghulamabidhassan/API-Projects.git
-
-[Live Demo Url](https://githubusers.abidhassan.dev/)
+git clone https://github.com/ghulamabidhassan/API-Projects.git.
