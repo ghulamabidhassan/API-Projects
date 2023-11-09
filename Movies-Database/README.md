@@ -1,8 +1,26 @@
-# React + Vite
+# Github Users API Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a simple React application that fetches and displays movie information from the Movies API.
 
-Currently, two official plugins are available:
+[Live Demo Url](https://moviedb.abidhassan.dev/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+## Features
+
+- **Search:** Search for a movie to see their data.
+
+### Prerequisites
+
+- VS code installed on your machine
+
+### Installing
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/ghulamabidhassan/API-Projects.git.
+
